@@ -58,11 +58,11 @@ Learn to search for patterns using `LIKE`.
   WHERE postalcode LIKE '2____';
   ```
 
-- **Find products related to 'Cheese'**:
+- **Find products related to 'Chef'**:
   ```sql
   SELECT productname, unitprice
   FROM Products
-  WHERE productname LIKE '%Cheese%';
+  WHERE productname LIKE '%Chef%';
   ```
 
 ---
@@ -70,12 +70,13 @@ Learn to search for patterns using `LIKE`.
 ### **3. Advanced Filtering**
 Explore more complex logic using `AND`, `OR`, and grouping.
 
-- **Clients based in Germany or Sweden who are Sales Managers**:
+- **Clients based in Austria or USA who are Sales Managers**:
   ```sql
   SELECT contactname, country, contacttitle
   FROM Customers
-  WHERE country IN ('Germany', 'Sweden')
-  AND contacttitle = 'Sales Manager';
+  WHERE country in ('Austria','USA')
+  AND contacttitle='Sales Manager'
+  
   ```
 
 - **Owners located outside France**:
