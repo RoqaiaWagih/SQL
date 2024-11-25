@@ -51,11 +51,11 @@ Learn to search for patterns using `LIKE`.
   WHERE contacttitle LIKE '%Manager%';
   ```
 
-- **Postal codes starting with 20 and having 6 characters**:
+- **Postal codes starting with 2 and having 5 characters**:
   ```sql
   SELECT customerid, companyname, postalcode
   FROM Customers
-  WHERE postalcode LIKE '20____';
+  WHERE postalcode LIKE '2____';
   ```
 
 - **Find products related to 'Cheese'**:
