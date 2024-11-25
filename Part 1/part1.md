@@ -75,12 +75,6 @@ Explore unique entries and grouped data.
   FROM Customers;
   ```
 
-- **Count the number of orders by year**:
-  ```sql
-  SELECT YEAR(orderdate) AS OrderYear, COUNT(orderid) AS TotalOrders
-  FROM Orders
-  GROUP BY YEAR(orderdate);
-  ```
 
 ---
 
@@ -117,8 +111,9 @@ Additional challenges for advanced queries.
   ```sql
   SELECT productname, unitprice
   FROM Products
-  ORDER BY unitprice DESC
+  WHERE unitprice >55
   LIMIT 5;
+  
   ```
 
 ---
